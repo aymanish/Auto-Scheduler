@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Task Schedule</title>
+</head>
+<body>
+    <h1>Your Task Schedule</h1>
+    <ul>
+        <li th:each="task : ${schedule}" th:text="${task.name}">Task Name</li>
+    </ul>
+</body>
+</html>
